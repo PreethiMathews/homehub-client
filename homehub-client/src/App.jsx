@@ -1,6 +1,8 @@
 import React from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Profile from "./pages/Profile";
+
 import SignUp from "./pages/SignUp";
 import PrivateRoute from "./components/PrivateRoute";
 import SignIn from "./pages/SignIn";
@@ -17,7 +19,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/home" element={<Home />} />
         <Route element={<PrivateRoute />}>
-          <Route path="/profile" element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
         </Route>
         <Route path="/home" element={<Home />} />
         <Route path="/sign-in" element={<SignIn />} />
