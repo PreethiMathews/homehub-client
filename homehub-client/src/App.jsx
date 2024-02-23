@@ -8,6 +8,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import SignIn from "./pages/SignIn";
 import CreateListing from "./pages/CreateListing";
 import UpdateListing from "./pages/UpdateListing";
+import Listing from "./pages/Listing";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
@@ -25,6 +26,8 @@ function App() {
           <Route path="/create-listing" element={<CreateListing />} />
           <Route path="/update-listing/:listingId" element={<UpdateListing />} />
         </Route>
+        <Route path="/listing/:listingId" element={<Listing />} />
+
         <Route path="/home" element={<Home />} />
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
