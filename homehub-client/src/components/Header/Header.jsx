@@ -45,10 +45,6 @@ function Header() {
           <Link to={"/Home"}>
             <li className="text-slate-400 hover:scale-110">Home</li>
           </Link>
-          <Link to={"/About"}>
-            <li className="text-slate-400 hover:scale-110">About</li>
-          </Link>
-
           <Link to="/profile">{currentUser ? <img className="rounded-full h-7 w-7 object-cover" src={currentUser.avatar} alt="profile" /> : <li className=" text-slate-700 hover:underline"> Sign in</li>}</Link>
         </ul>
       </div>

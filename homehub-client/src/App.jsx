@@ -1,6 +1,5 @@
 import React from "react";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import Profile from "./pages/Profile";
 import Search from "./pages/Search";
 
@@ -20,7 +19,6 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/home" element={<Home />} />
         <Route path="/search" element={<Search />} />
 

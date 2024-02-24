@@ -167,10 +167,6 @@ function CreateListing() {
               <input type="checkbox" id="furnished" className="w-5" onChange={handleChange} checked={formData.furnished} />
               <span>Furnished</span>
             </div>
-            <div className="flex gap-2">
-              <input type="checkbox" id="offer" className="w-5" onChange={handleChange} checked={formData.offer} />
-              <span> Offer</span>
-            </div>
           </div>
           <div className="flex flex-wrap gap-6">
             <div className="flex items-center gap-2">
@@ -184,15 +180,7 @@ function CreateListing() {
             <div className="flex items-center gap-2">
               <input type="number" id="regularPrice" min="100" max="100000000" required className="p-3 border border-gray-300 rounded-lg" onChange={handleChange} value={formData.regularPrice} onChange={handleChange} value={formData.regularPrice} />
               <div className="flex flex-col items-center">
-                <p>Regular price</p>
-                <span className="text-xs">($ / month)</span>
-              </div>
-            </div>
-            <div className="flex items-center gap-2">
-              <input onChange={handleChange} value={formData.discountPrice} type="number" id="discountPrice" min="0" max="1000000" required className="p-3 border border-gray-300 rounded-lg" />
-              <div className="flex flex-col items-center">
-                <p>Discount price</p>
-                <span className="text-xs">($ / month)</span>
+                <p>Price</p>
               </div>
             </div>
           </div>
