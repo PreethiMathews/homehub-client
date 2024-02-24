@@ -2,6 +2,7 @@ import React from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Profile from "./pages/Profile";
+import Search from "./pages/Search";
 
 import SignUp from "./pages/SignUp";
 import PrivateRoute from "./components/PrivateRoute";
@@ -21,6 +22,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/search" element={<Search />} />
+
         <Route element={<PrivateRoute />}>
           <Route path="/profile" element={<Profile />} />
           <Route path="/create-listing" element={<CreateListing />} />
