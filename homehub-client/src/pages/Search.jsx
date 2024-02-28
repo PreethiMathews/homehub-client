@@ -109,10 +109,10 @@ function Search() {
               <input type="checkbox" id="sale" className="w-5" onChange={handleChange} checked={sidebardata.type === "sale"} />
               <span>Sale</span>
             </div>
-            <div className="flex gap-2">
+            {/* <div className="flex gap-2">
               <input type="checkbox" id="offer" className="w-5" onChange={handleChange} checked={sidebardata.offer} />
               <span>Offer</span>
-            </div>
+            </div> */}
           </div>
           <div className="flex gap-2 flex-wrap items-center ">
             <label className="font-semibold">Amenities:</label>
@@ -139,7 +139,7 @@ function Search() {
       </div>
       <div className="flex-1">
         <h1 className="text-3xl font-semibold border-b p-3 text-slate-700 mt-5"> Listing results:</h1>
-        {!loading && listings && listings.map((listing) => <ListingItem key={listing._id} listing={listing} />)}
+        <div className="p-7 flex flex-wrap gap-4">{!loading && listings && listings.map((listing) => <ListingItem key={listing._id} listing={listing} />)}</div>
       </div>
     </div>
   );
